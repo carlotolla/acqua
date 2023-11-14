@@ -37,7 +37,7 @@ release = '23.11'
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = ['sphinx.ext.autodoc', 'sphinx.ext.todo', 'sphinx.ext.viewcode', 'sphinx_rtd_theme',
-              'sphinx_toolbox.more_autodoc.autonamedtuple', 'sphinxcontrib.mermaid']
+              'sphinx_toolbox.more_autodoc.autonamedtuple', 'sphinxcontrib.mermaid', "sphinx_design"]
 
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']

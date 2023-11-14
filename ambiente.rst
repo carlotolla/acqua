@@ -37,7 +37,7 @@ Objetos do Ambiente
 
     <br />&emsp;
 
-.. automodule:: agua.ilha
+.. automodule:: ilha
     :members:
     :undoc-members:
     :show-inheritance:

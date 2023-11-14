@@ -1,8 +1,8 @@
 .. _modulos_principal:
 
-#######################
-Ilha Proibida - Água 🌊
-#######################
+#################################
+Ilha - Desenvolvedor - Água 🌊
+#################################
 
 A Ilha Proibida é um emocionante jogo cooperativo no qual os participantes têm de encontrar
 os tesouros de uma mítica ilha misteriosa, antes que as águas a cubram por completo.

@@ -33,7 +33,7 @@ Objetos do Jogador
 
     <br />&emsp;
 
-.. automodule:: agua.jogador
+.. automodule:: jogador
     :members:
     :undoc-members:
     :show-inheritance:
