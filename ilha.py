@@ -28,18 +28,23 @@ Changelog
 |   `Labase <http://labase.selfip.org/>`_ - `NCE <https://portal.nce.ufrj.br>`_ - `UFRJ <https://ufrj.br/>`_.
 """
 from util import LG
+LG.level = 2
 
 
 class IlhaProibida:
     """ Ponto central de Construção do jogo.
 
     """
+
     def __init__(self):
         from random import shuffle
         # noinspection SpellCheckingInspection
-        baralho_tesouro = bt = list("tafv" * 5 + "dd" + "hhh")
+        baralho_tesouro = bt = "tafv"*5 + "ddhhh"
         baralho_alaga = ba = list("eee")
-        self.cartas_tesouro = [CartaTesouro(face=carta) for carta in bt]
+        # self.cartas_tesouro = [CartaTesouro(face=carta) for carta in bt]
+        self.cartas_tesouro = []
+        for carta in bt:
+            self.cartas_tesouro.append(CartaTesouro(carta))
         # recursos do jogador para realizar capturas, drenagem e movimentos
         self.cartas_tesouro += [CartaAlagamento(face=carta) for carta in ba]
         # acrescido de um conjunto de cartas que causam uma enchente
@@ -63,8 +68,9 @@ class CartaTesouro:
     """Recursos necessários para resgatar tesouros.
 
     """
+
     def __init__(self, face):
-        self.face = face
+        self.face = str(face)
         # LG.log(0, "Bem vindos à Ilha Proibida - montagem do tabuleiro")
 
     def __repr__(self):
@@ -75,6 +81,7 @@ class CartaAlagamento(CartaTesouro):
     """ Controle ambiental de defesa da Ilha.
 
     """
+
     def __init__(self, face):
         super().__init__(face)
         # LG.log(0, "Bem vindos à Ilha Proibida - montagem do tabuleiro")
