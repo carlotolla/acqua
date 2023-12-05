@@ -33,12 +33,12 @@ class TestGeralIlha(unittest.TestCase):
         self.assertEqual(24, len(self.ilha.cartas_inunda))
 
     def test_cartas_tesouro_ilha(self):
-        # a = ilha.CartaTesouro("a")
         self.assertIsInstance(self.ilha.cartas_tesouro[0], ilha.CartaTesouro)
-        #print([(ct) for ct in self.ilha.cartas_tesouro])
-        #self.assertIn("a", "".join([repr(ct) for ct in self.ilha.cartas_tesouro]))
+        # print([(ct) for ct in self.ilha.cartas_tesouro])
         self.assertIn("a", str(self.ilha.cartas_tesouro))
-        #self.assertEqual(28, len(self.ilha.cartas_tesouro))
+        self.assertEqual(28, len(self.ilha.cartas_tesouro))
+        self.assertEqual(5, len(
+            [1 for ct in self.ilha.cartas_tesouro if "a" == str(ct)]))
 
 
 if __name__ == '__main__':
