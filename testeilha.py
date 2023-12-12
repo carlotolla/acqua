@@ -22,6 +22,8 @@ _    `UFRJ <https://ufrj.br/>`_.
 """
 import unittest
 import ilha
+from util import LG
+LG.level = 2
 
 
 class TestGeralIlha(unittest.TestCase):

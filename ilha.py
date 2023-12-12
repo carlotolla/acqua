@@ -28,7 +28,7 @@ Changelog
 |   `Labase <http://labase.selfip.org/>`_ - `NCE <https://portal.nce.ufrj.br>`_ - `UFRJ <https://ufrj.br/>`_.
 """
 from util import LG
-LG.level = 2
+LG.level = 0
 
 
 class IlhaProibida:
